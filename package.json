@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "engines": {
+    "node": "13.5.0",
+    "npm": "6.13.4"
+  },
+  "scripts": {
+    "start": "node app",
+    "server": "nodemon app",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "author": "Charles Uthulor",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "https": "^1.0.0",
+    "mongoose": "^5.9.22",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}
