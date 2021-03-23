@@ -8,11 +8,11 @@ module.exports = (app) => {
 
     app.get('/auth/google/callback', passport.authenticate('google'))
 
-    app.get('/logout', (req, res) => {
+    app.get('/api/logout', (req, res) => {
         req.logout();
         res.send('You have been logged out')
     })
-    app.get('/user', (req, res) => {
+    app.get('/api/current_user', (req, res) => {
         res.send(req.user);
     })
 
