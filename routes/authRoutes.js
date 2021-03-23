@@ -16,7 +16,7 @@ module.exports = (app) => {
         res.send(req.user);
     })
 
-    app.get('/', (req, res) => {
+    app.get('/api', (req, res) => {
         res.send('My Name is Charles')
     })
 }
